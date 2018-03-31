@@ -45,4 +45,13 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to users_url
   end
+
+# 追記
+  test "新規ユーザー登録ページにのh1が'New User’になっている" do
+    get new_user_url
+    assert_select "h1", "New User"
+  end
+
+
+
 end

@@ -6,9 +6,5 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  test "should get index" do
-    get users_url
-    assert_response :success
-  end
 
 end
