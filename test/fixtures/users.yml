@@ -6,6 +6,6 @@ one:
   tel: 1
 
 two:
-  name: MyString
+  name: ""
   email: MyString
   tel: 1
