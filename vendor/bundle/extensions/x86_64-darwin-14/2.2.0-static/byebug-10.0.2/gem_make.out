@@ -1,0 +1,15 @@
+/Users/kanayamachinatsu/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20180331-303-1kcgk2d.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180331-303-dqanlj/byebug
