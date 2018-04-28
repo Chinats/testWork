@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  validates :name, presence: true
-
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/
-  validates :email, format: { with: VALID_EMAIL_REGEX , message: 'メールアドレスが適切でありません。'}
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 end
