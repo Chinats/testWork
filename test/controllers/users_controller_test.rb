@@ -11,7 +11,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    get sign_in_url
+    get new_user_session_url
     assert_response :success
   end
 
