@@ -1,10 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# 正しいデータのユーザー
 one:
   name: MyString
-  email: MyString
-  tel: 1
+  email: MyString@xx.xx
+  tel: 11111111111
 
+# 名前が空のユーザー
 two:
   name: ""
   email: MyString@xx.xx
