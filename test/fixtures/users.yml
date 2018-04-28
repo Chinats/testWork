@@ -6,11 +6,9 @@ one:
   email: MyString1@xx.xx
   tel: 11111111111
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
-  confirmed_at: <%= Time.now - 100 %>
 
 # 名前が空のユーザー
 two:
   name: ""
   email: MyString2@xx.xx
   encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
-  confirmed_at: <%= Time.now - 100 %>
