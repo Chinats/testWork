@@ -6,12 +6,12 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get users_url
+    get user_session_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_user_url
+    get sign_in_url
     assert_response :success
   end
 
@@ -25,23 +25,23 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should show user" do
-    get user_url(@user)
+    get user_url
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_user_url(@user)
+    get edit_user_url
     assert_response :success
   end
 
   test "should update user" do
-    patch user_url(@user), params: { user: { email: @user.email, name: @user.name, tel: @user.tel } }
-    assert_redirected_to user_url(@user)
+    patch user_url, params: { user: { email: @user.email, name: @user.name, tel: @user.tel } }
+    assert_redirected_to user_url
   end
 
   test "should destroy user" do
     assert_difference('User.count', -1) do
-      delete user_url(@user)
+      delete user_url
     end
 
     assert_redirected_to users_url
