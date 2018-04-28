@@ -48,9 +48,9 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
 # 追記
-  test "新規ユーザー登録ページにのh1が'New User’になっている" do
-    get new_user_url
-    assert_select "h1", "New User"
+  test "新規ユーザー登録ページのh2が'Sign up’になっている" do
+    get new_user_registration_url
+    assert_select "h2", "Sign up"
   end
 
 
